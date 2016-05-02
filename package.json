@@ -1,0 +1,31 @@
+{
+  "name": "xively-ui",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "classnames": "2.2.4",
+    "meteor-node-stubs": "~0.2.0",
+    "normalize.css": "4.1.1",
+    "react": "15.0.2",
+    "react-addons-pure-render-mixin": "15.0.2",
+    "react-dom": "15.0.2",
+    "react-toolbox": "0.16.2"
+  },
+  "cssModules": {
+    "extensions": [
+      "scss"
+    ],
+    "globalVariables": [
+      "node_modules/react-toolbox/lib/_colors.scss",
+      {
+        "theme-building": true
+      },
+      "client/toolbox-theme.scss"
+    ],
+    "outputJsFilePath": {
+      ".*node_modules/.*": "{dirname}/{basename}"
+    }
+  }
+}
